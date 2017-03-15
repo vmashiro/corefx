@@ -2,12 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
-// IMPORTANT: This is temporary code.
+using System.Security;
 
-namespace System
-{
-    internal class DBNull
-    {
-        public static readonly DBNull Value = new DBNull();
-    }
-}
+[assembly: AllowPartiallyTrustedCallers]
